@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>elmuchotomato projects</title>
+<meta name="description" content="Links to all of elmuchotomato's live project sites.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='17' r='13' fill='%23c8452f'/><path d='M16 5c-2-3-5-3-7-2 1 2 4 3 7 2zm0 0c2-3 5-3 7-2-1 2-4 3-7 2z' fill='%234d7a3a'/></svg>">
+<style>
+  :root {
+    --bg: #f7f4ee;
+    --surface: #fffdf9;
+    --text: #25211c;
+    --muted: #6a6359;
+    --line: #e2dbcf;
+    --accent: #b23c27;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1815;
+      --surface: #24211d;
+      --text: #f1ece3;
+      --muted: #a9a195;
+      --line: #3a352e;
+      --accent: #ee8066;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.5;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 16px;
+  }
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    overflow-wrap: anywhere;
+  }
+  .intro {
+    margin: 8px 0 32px;
+    color: var(--muted);
+  }
+  ul {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    display: block;
+    padding: 16px 20px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 120ms ease, transform 120ms ease;
+  }
+  a:hover { border-color: var(--accent); transform: translateY(-1px); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .name { display: block; font-weight: 600; }
+  a:hover .name { color: var(--accent); }
+  .about { display: block; margin-top: 2px; color: var(--muted); font-size: 0.95rem; }
+  @media (prefers-reduced-motion: reduce) {
+    a { transition: none; }
+    a:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>elmuchotomato</h1>
+  <p class="intro">All my live projects in one place.</p>
+  <ul>
+    <li><a href="/polarh10ecg/">
+      <span class="name">H10 ECG Analyzer</span>
+      <span class="about">Explore ECG recordings from a Polar H10 chest strap, from a file or live over Bluetooth.</span>
+    </a></li>
+    <li><a href="/unemployment/">
+      <span class="name">Swiss labour tracker</span>
+      <span class="about">Monthly registered unemployment by canton, from SECO data.</span>
+    </a></li>
+    <li><a href="/NVS_game/">
+      <span class="name">Last Orders</span>
+      <span class="about">A multiplayer pub quiz. Teams answer on their phones while the host runs the game.</span>
+    </a></li>
+    <li><a href="/flightracker/">
+      <span class="name">EAP RWY15 Departure Compliance</span>
+      <span class="about">EuroAirport runway 15 departures compared with the expected corridor.</span>
+    </a></li>
+    <li><a href="/PA_malin_lena/">
+      <span class="name">Basel project</span>
+      <span class="about">A homepage about special spots in Basel city.</span>
+    </a></li>
+  </ul>
+</main>
+</body>
+</html>
